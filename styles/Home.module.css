@@ -1,0 +1,63 @@
+.formContainer {
+  position: relative;
+  width: 80%;
+  margin-top: -15rem;
+  max-width: 30rem;
+  transform: scale(1.4);
+}
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.passwordInput {
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 7px;
+  font-size: large;
+}
+
+.iconOnlyBtn {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.passwordChecker {
+  position: absolute;
+  margin-top: 8px;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+}
+.passwordChecker li {
+  list-style-type: none;
+}
+.passwordChecker li::before {
+  content: '▪';
+  margin-right: 6px;
+}
+.passwordChecker li[data-matched=true] {
+  color: green;
+}
+.passwordChecker li[data-matched=true]::before {
+  content: '✔';
+  margin-right: 6px;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
